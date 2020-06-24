@@ -42,7 +42,7 @@ If you have a pre-existing Worker project, you can use Workers Sites to serve st
         let pathname = new URL(event.request.url).pathname
         return new Response(`"${pathname}" not found`, {
           status: 404,
-          statusText: 'not found',
+          statusText: 'found',
         })
       }
     }
